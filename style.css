@@ -1,0 +1,86 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(34, 1, 29);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: calc(80%);
+  height: 295px;
+  margin-top: 10%;
+}
+.photo {
+  width: 56%;
+  background-image: url(images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photo img {
+  width: calc(100%);
+}
+.text {
+  background-color: rgb(63, 16, 65);
+  width: 65%;
+  height: 372px;
+  color: #fff;
+  border-radius: 12px 0px 0 12px;
+}
+.bas {
+  display: flex;
+  justify-content: space-evenly;
+}
+p {
+  margin-top: -20px;
+}
+.tout {
+  margin-left: 5%;
+}
+.tout span {
+  color: rgb(240, 13, 206);
+}
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .text {
+    height: 280px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .text {
+    height: 300px;
+  }
+  .photo {
+    height: 300px;
+  }
+  .photo img {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .photo {
+    background-image: url(images/image-header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text {
+    width: calc(100%);
+    border-radius: 12px 12px 0 0;
+  }
+  .photo {
+    width: calc(100%);
+  }
+}
